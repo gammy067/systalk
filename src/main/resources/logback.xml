@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>   
+   
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">   
+    <!-- encoder 默认配置为PatternLayoutEncoder -->   
+    <encoder>   
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} %line - %msg%n</pattern>   
+    </encoder>   
+  </appender>
+  
+  <appender name="DAYFILEOUT" class="ch.qos.logback.core.rolling.RollingFileAppender" >
+  	<!-- localhost 
+  	<file>/users/jaychen/var/log/tku/tku.log</file>
+  	-->
+  	<!-- GCP VM(35.201.199.252) -->
+  	<file>/opt/st/logs/st.log</file>
+  	
+  	<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy"> 
+  		<!-- localhost      
+    	<fileNamePattern>/users/jaychen/var/log/tku/tkuLog-%d{yyyy-MM-dd}.zip</fileNamePattern>
+    	-->
+    	<!-- VM(192.168.1.128)  -->    
+    	<fileNamePattern>/opt/st/logs/stLog-%d{yyyy-MM-dd}.zip</fileNamePattern>
+    	
+      <!--日誌文件保留天數-->
+      <maxHistory>30</maxHistory>
+      <totalSizeCap>1GB</totalSizeCap>
+    	 
+    </rollingPolicy>
+    <encoder>   
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>   
+    </encoder> 
+  </appender>
+  
+  <logger name="com.systalk" level="DEBUG" additivity="false">
+  	<appender-ref ref="STDOUT"/>
+  	<appender-ref ref="DAYFILEOUT" />
+  </logger>
+  
+  <logger name="org.hibernate" level="INFO" additivity="false">
+  	<appender-ref ref="STDOUT"/>
+  	<appender-ref ref="DAYFILEOUT" />
+  </logger>
+  
+  <!-- 將DispatcherServlet設為DEBUG後,log中仍太多不必要資訊,可能朝繼承@Override的方向試試 -->
+  <logger name="org.springframework.web.servlet.DispatcherServlet" level="INFO" additivity="false">
+  	<appender-ref ref="STDOUT"/>
+  	<appender-ref ref="DAYFILEOUT" />
+  </logger>
+  
+  <!-- 目前spring的log也會輸出,所以調整為INFO,避免log中太多不必要的資訊,再針對要看的log加入logger的設定即可 -->
+  <root level="INFO">             
+    <appender-ref ref="STDOUT" /> 
+    <appender-ref ref="DAYFILEOUT" />  
+  </root>     
+     
+ </configuration>

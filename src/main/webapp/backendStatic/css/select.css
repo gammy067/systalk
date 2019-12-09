@@ -1,0 +1,119 @@
+/*************select*******************/
+
+
+.status {
+    display: inline-block;
+}
+
+.select-hidden {
+    display: none;
+    visibility: hidden;
+    padding-right: 10px;
+}
+
+.select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    width: 408px;
+    height: 34px;
+    vertical-align: middle;
+}
+
+
+
+.select-styled {
+    position: absolute;
+    line-height: 1.8;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: inherit;
+    padding: 2px 34px;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background-color: inherit;
+    border: 0px solid #CCCCCC;
+    border-radius: 4px;
+    color: #B6BBBF;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.select-styled:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -7px;
+    width: 22px;
+    height: 8px;
+    background-image: url(../images/icon-arrow.png);
+    background-repeat: no-repeat;
+}
+.select-styled::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -8px;
+    width: 22px;
+    height: 34px;
+    background-color: #fff;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+screen and (min--moz-device-pixel-ratio: 2) {
+    .select-styled:after {
+        background-image: url(../images/icon-arrow@2x.png);
+        background-size: 13px 8px;
+        background-repeat: no-repeat;
+    }
+}
+
+
+.select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 3px 0px 0px;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.select-options li {
+    margin: 0;
+    padding: 6px 10px;
+    text-indent: 15px;
+    border-top: 1px solid #fff;
+    -moz-transition: all 0.15s ease-in;
+    -o-transition: all 0.15s ease-in;
+    -webkit-transition: all 0.15s ease-in;
+    transition: all 0.15s ease-in;
+    word-break: break-all;
+}
+
+/** 不要隱藏第一個下拉 modify by richard 10.02
+.select-options li:first-child {
+    display: none;
+}
+*/
+
+.select-options li:hover {
+    color: #fff;
+    background: #3a3a3a;
+}
+
+.select-options li[rel="hide"] {
+    display: none;
+}
+
+.select_row .select-styled {
+    display: none;
+}

@@ -1,0 +1,211 @@
+.icons-sprite, .icons-bomb-cancel, .icons-bomb-hook, .icons-btn-add, .icons-btn-cancel, .icons-btn-delete, .icons-btn-edit, .icons-icon-arrow, .icons-icon-calander, .icons-icon-edit, .icons-icon-hook, .icons-icon-pic, .icons-img-cancel {
+  background-image: url('../images/icons-see848152c2.png');
+  background-repeat: no-repeat;
+}
+
+.icons-bomb-cancel {
+  background-position: 0 0;
+  height: 50px;
+  width: 50px;
+}
+
+.icons-bomb-hook {
+  background-position: 0 -51px;
+  height: 50px;
+  width: 50px;
+}
+
+.icons-btn-add {
+  background-position: 0 -102px;
+  height: 20px;
+  width: 20px;
+}
+
+.icons-btn-cancel {
+  background-position: 0 -123px;
+  height: 26px;
+  width: 26px;
+}
+
+.icons-btn-delete {
+  background-position: 0 -150px;
+  height: 23px;
+  width: 20px;
+}
+
+.icons-btn-edit {
+  background-position: 0 -174px;
+  height: 22px;
+  width: 23px;
+}
+
+.icons-icon-arrow {
+  background-position: 0 -197px;
+  height: 8px;
+  width: 13px;
+}
+
+.icons-icon-calander {
+  background-position: 0 -206px;
+  height: 24px;
+  width: 24px;
+}
+
+.icons-icon-edit {
+  background-position: 0 -231px;
+  height: 20px;
+  width: 20px;
+}
+
+.icons-icon-hook {
+  background-position: 0 -252px;
+  height: 20px;
+  width: 20px;
+}
+
+.icons-icon-pic {
+  background-position: 0 -273px;
+  height: 15px;
+  width: 20px;
+}
+
+.icons-img-cancel {
+  background-position: 0 -289px;
+  height: 32px;
+  width: 32px;
+}
+
+.icons2x-sprite, .icons2x-bomb-cancel, .icons2x-bomb-hook, .icons2x-btn-add, .icons2x-btn-cancel, .icons2x-btn-delete, .icons2x-btn-edit, .icons2x-icon-arrow, .icons2x-icon-calander, .icons2x-icon-edit, .icons2x-icon-hook, .icons2x-icon-pic, .icons2x-img-cancel {
+  background-image: url('../images/icons2x-sc54a941490.png');
+  background-repeat: no-repeat;
+}
+
+.icons2x-bomb-cancel {
+  background-position: 0 0;
+  height: 100px;
+  width: 100px;
+}
+
+.icons2x-bomb-hook {
+  background-position: 0 -101px;
+  height: 100px;
+  width: 100px;
+}
+
+.icons2x-btn-add {
+  background-position: 0 -202px;
+  height: 40px;
+  width: 40px;
+}
+
+.icons2x-btn-cancel {
+  background-position: 0 -243px;
+  height: 52px;
+  width: 52px;
+}
+
+.icons2x-btn-delete {
+  background-position: 0 -296px;
+  height: 46px;
+  width: 40px;
+}
+
+.icons2x-btn-edit {
+  background-position: 0 -343px;
+  height: 44px;
+  width: 46px;
+}
+
+.icons2x-icon-arrow {
+  background-position: 0 -388px;
+  height: 16px;
+  width: 26px;
+}
+
+.icons2x-icon-calander {
+  background-position: 0 -405px;
+  height: 48px;
+  width: 48px;
+}
+
+.icons2x-icon-edit {
+  background-position: 0 -454px;
+  height: 40px;
+  width: 40px;
+}
+
+.icons2x-icon-hook {
+  background-position: 0 -495px;
+  height: 40px;
+  width: 40px;
+}
+
+.icons2x-icon-pic {
+  background-position: 0 -536px;
+  height: 30px;
+  width: 40px;
+}
+
+.icons2x-img-cancel {
+  background-position: 0 -567px;
+  height: 64px;
+  width: 64px;
+}
+
+@media (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .icons-all-retina-sprites, .icons-bomb-cancel, .icons-bomb-hook, .icons-btn-add, .icons-btn-cancel, .icons-btn-delete, .icons-btn-edit, .icons-icon-arrow, .icons-icon-calander, .icons-icon-edit, .icons-icon-hook, .icons-icon-pic, .icons-img-cancel {
+    background-image: url('../images/icons2x-sc54a941490.png');
+    -moz-background-size: 50px auto;
+    -o-background-size: 50px auto;
+    -webkit-background-size: 50px auto;
+    background-size: 50px auto;
+  }
+
+  .icons-bomb-cancel {
+    background-position: 0 0;
+  }
+
+  .icons-bomb-hook {
+    background-position: 0 -50.5px;
+  }
+
+  .icons-btn-add {
+    background-position: 0 -101px;
+  }
+
+  .icons-btn-cancel {
+    background-position: 0 -121.5px;
+  }
+
+  .icons-btn-delete {
+    background-position: 0 -148px;
+  }
+
+  .icons-btn-edit {
+    background-position: 0 -171.5px;
+  }
+
+  .icons-icon-arrow {
+    background-position: 0 -194px;
+  }
+
+  .icons-icon-calander {
+    background-position: 0 -202.5px;
+  }
+
+  .icons-icon-edit {
+    background-position: 0 -227px;
+  }
+
+  .icons-icon-hook {
+    background-position: 0 -247.5px;
+  }
+
+  .icons-icon-pic {
+    background-position: 0 -268px;
+  }
+
+  .icons-img-cancel {
+    background-position: 0 -283.5px;
+  }
+}

@@ -1,0 +1,17 @@
+document.writeln("    <header class=\'navbar fixed-top\'>");
+document.writeln("        <div class=\'container\'>");
+document.writeln(" <a href=\'index.html\'><img class=\'justify-content-start mr-auto\' src=\'images/logo-white.png\' srcset=\'images/logo-white@2x.png 2x\' alt=\'\'></a>");
+document.writeln("            <div class=\'justify-content-end\'>");
+document.writeln("                <div class=\'about-menu\'>");
+document.writeln("                    <ul>");
+document.writeln("                        <li class=\'active\'><a href=\'menu.html\'>回首頁</a></li>");
+document.writeln("                        <li><a href=\'banner.html\'>首頁輪播畫面設定</a></li>");
+document.writeln("                        <li><a href=\'video.html\'>行銷影片設定</a></li>");
+document.writeln("                        <li><a href=\'success.html\'>成功案例設定</a></li>");
+document.writeln("                        <li><a href=\'news.html\'>最新消息設定</a></li>");
+document.writeln("                    </ul>");
+document.writeln("                </div>");
+document.writeln("                <a href=\'index.html\'>登出</a>");
+document.writeln("            </div>");
+document.writeln("        </div>");
+document.writeln("    </header>");

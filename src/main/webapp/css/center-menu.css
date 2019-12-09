@@ -1,0 +1,165 @@
+@media screen and (max-width: 991px) {
+	.banner-logo{
+		width: 300px;
+		height: 79px;
+	}
+	.banner-desc{
+		font-size: 28px;
+	}
+	nav.menubar ul{
+		font-size: 20px;
+	}
+	nav.menubar ul li {
+		width: 23%;
+	}
+	ul.api_img li {
+		margin: 30px 0px 0px;
+	}
+	ul.api_img::before {
+		left: 24%;
+	}
+	nav.menubar {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 767px) {
+
+	section.banner {
+		height: auto;
+		padding: 150px 0 100px 0;
+	}
+	.banner-desc{
+		letter-spacing: 1.5px;
+	}
+	section.tsmp-menu{
+		padding: 0;
+	}
+	section.tsmp-menu .container{
+		padding: 0;
+	}
+	nav.menubar{
+		font-size: 20px;
+	}
+	nav.menubar a{
+    	border-bottom: 1px solid #fff;
+		display: none;
+		padding: 15px 0;
+		width: 100%;
+		position: relative;
+	}
+	nav.menubar a:after{
+		-webkit-transform: rotate(45deg);
+	    -moz-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	    transform: rotate(45deg);
+	    content: "";
+	    position: absolute;
+	    top: calc(50% - 16px);
+	    right: 20px;
+	    width: 16px;
+	    height: 16px;
+	    border-right: 3px solid #fff;
+	    border-bottom: 3px solid #fff;
+	    transform: rotate(45deg);
+	    display: none;
+	}
+	nav.menubar a.active:after{
+	    display: block;
+	}
+	nav.menubar.open a.active:after{
+	    display: none;
+	}
+	nav.menubar.open a:first-child:after{
+		-webkit-transform: rotate(225deg);
+	    -moz-transform: rotate(225deg);
+	    -ms-transform: rotate(225deg);
+	    transform: rotate(225deg);
+	    display: block;
+	    top: calc(50% - 6px);
+	}
+	nav.menubar.open a {
+    	display: block;
+	}
+	nav.menubar a.active{
+		
+	    display: block;
+	    cursor: pointer;
+	}
+	.features .desc{
+		font-size: 22px;
+	}
+	ul.api_img::before {
+		display: none;
+	}
+	.car-box h1 {
+		font-size: 16px;
+		padding: 10px;
+	}
+	.car-box p {
+		font-size: 13px;
+	}
+	.container h3 {
+		font-size: 16px;
+	}
+	.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+		margin-right: -40px;
+	}
+	.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+		margin-left: -40px;
+	}
+	section.awSlider {
+		padding: 10px;
+	}
+	
+}
+@media screen and (max-width: 430px) {
+	.banner-logo{
+		width: 280px;
+		height: 74px;
+	}
+	.banner-desc{
+		font-size: 24px;
+	}
+	section.introduction:before{
+		width: 280px;
+		height: 277px;
+	}
+	section.introduction:after{
+		width: 280px;
+		height: 262px;
+	}
+	.introduction .desc{
+		font-size: 18px;
+	}
+	.features .desc{
+		font-size: 18px;
+	}
+	.framwork .fm-img img{
+		width: 100%;
+	}
+	ul.api_img li {
+		margin: 8px 0px 0px;
+	}
+	
+
+}
+@media screen and (max-width: 320px) {
+	ul.api_img::before {
+		left: 47%;
+		height: 70%;
+		width: 18px;
+		display: block;
+	}
+}
+@media screen and (min-width: 768px){
+	.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+		margin-right: -80px;
+	}
+	.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+		margin-left: -80px;
+	}
+}
+.carousel-indicators {
+	display: none;
+}
+

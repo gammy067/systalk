@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+ 
+<tiles-definitions>  
+  
+  	<!--  前臺 layouts -->
+	<definition name="main" template="/WEB-INF/views/tiles/main.jsp">
+		<put-attribute name="title" value="This is Title" />
+		<put-attribute name="header" value="/WEB-INF/views/tiles/header.jsp" />
+		<put-attribute name="body" value="" cascade="true" />
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/footer.jsp" />
+	</definition>
+	
+	<!--  後臺 登入 layouts -->
+	<definition name="backendLogin" template="/WEB-INF/views/tiles/mainBackend.jsp">
+		<put-attribute name="title" value="This is Title" />
+		<put-attribute name="header" value="/WEB-INF/views/tiles/headerBackendLogin.jsp" />
+		<put-attribute name="body" value="" cascade="true" />
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/backendFooter.jsp" />
+	</definition>
+
+	<!--  後臺 layouts -->
+	<definition name="backend" template="/WEB-INF/views/tiles/mainBackend.jsp">
+		<put-attribute name="title" value="This is Title" />
+		<put-attribute name="header" value="/WEB-INF/views/tiles/backendHeader.jsp" />
+		<put-attribute name="body" value="" cascade="true" />
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/backendFooter.jsp" />
+	</definition>
+  
+  
+
+    <!--前臺官網 page -->
+   	<!-- index 首頁-->
+  	<definition name="/index" extends="main">
+  		<put-attribute name="title" value="SysTalk.ai讓AI成為數位勞動力主角｜AI解決方案專家" />
+		<put-attribute name="body" value="/WEB-INF/views/frontend/index.jsp"></put-attribute>  
+  	</definition>
+  	
+  	<!-- article 文章瀏覽 (已取消該功能)-->
+  	<definition name="/article" extends="main">
+  		<put-attribute name="title" value="SysTalk.ai讓AI成為數位勞動力主角｜AI解決方案專家" />
+		<put-attribute name="body" value="/WEB-INF/views/frontend/article.jsp"></put-attribute>  
+  	</definition>
+  	
+  	<!-- newsArea 最新消息專區-->
+  	<definition name="/newsArea" extends="main">
+  		<put-attribute name="title" value="SysTalk.ai讓AI成為數位勞動力主角｜AI解決方案專家" />
+		<put-attribute name="body" value="/WEB-INF/views/frontend/newsArea.jsp"></put-attribute>
+  	</definition>
+  	
+  	<!-- newsAreaContent 最新消息內文專區-->
+  	<definition name="/newsAreaContent" extends="main">
+  		<put-attribute name="title" value="SysTalk.ai讓AI成為數位勞動力主角｜AI解決方案專家" />
+		<put-attribute name="body" value="/WEB-INF/views/frontend/newsAreaContent.jsp"></put-attribute>
+  	</definition>
+  	
+  	<!-- chat 產品專區 (2019.10.09 新增)-->
+  	<definition name="/chat" extends="main">
+  		<put-attribute name="title" value="SysTalk.Chat｜AI對話式服務導入：帶NLU大腦的Chatbot聊天機器人" />
+		<put-attribute name="body" value="/WEB-INF/views/frontend/chat.jsp"></put-attribute>
+  	</definition>
+  	  	
+  	<!-- rpa 產品專區 (2019.11.08 新增)-->
+  	<definition name="/rpa" extends="main">
+  		<put-attribute name="title" value="SysTalk.Chat｜AI對話式服務導入：帶NLU大腦的Chatbot聊天機器人" />
+		<put-attribute name="body" value="/WEB-INF/views/frontend/rpa.jsp"></put-attribute>
+  	</definition>
+
+
+
+
+    <!--後臺 page -->
+  	 <!--login 登入  header無選單 -->
+  	<definition name="/backend/login" extends="backendLogin">
+  		<put-attribute name="title" value="login" />
+		<put-attribute name="body" value="/WEB-INF/views/backend/login.jsp"></put-attribute>
+  	</definition>
+  	
+  	 <!--index 後台登入首頁-->
+  	<definition name="/backend/index" extends="backend">
+  		<put-attribute name="title" value="backend index" />
+		<put-attribute name="body" value="/WEB-INF/views/backend/index.jsp"></put-attribute>
+  	</definition>
+
+  	<!-- bannerHome -->
+  	<definition name="/backend/bannerHome" extends="backend">
+  		<put-attribute name="title" value="bannerHome" />
+		<put-attribute name="body" value="/WEB-INF/views/backend/bannerHome.jsp"></put-attribute>
+  	</definition>
+
+  	<!-- editBanner 後台輪播 新增、編輯-->
+  	<definition name="/backend/editBanner" extends="backend">
+  		<put-attribute name="title" value="editBanner" />
+		<put-attribute name="body" value="/WEB-INF/views/backend/editBanner.jsp"></put-attribute>
+  	</definition>
+  	
+  	<!-- newsAreaHome 後台新聞專區首頁-->
+  	<definition name="/backend/newsAreaHome" extends="backend">
+  		<put-attribute name="title" value="newsAreaHome" />
+		<put-attribute name="body" value="/WEB-INF/views/backend/newsAreaHome.jsp"></put-attribute>
+  	</definition>
+
+  	<!-- editNewsArea 後台新聞專區 新增、編輯-->
+  	<definition name="/backend/editNewsArea" extends="backend">
+  		<put-attribute name="title" value="editNewsArea" />
+		<put-attribute name="body" value="/WEB-INF/views/backend/editNewsArea.jsp"></put-attribute>
+  	</definition>
+
+	<!-- videoHome 後台行銷影片首頁 -->
+	<definition name="/backend/videoHome" extends="backend">
+		<put-attribute name="title" value="videoHome" />
+		<put-attribute name="body" value="/WEB-INF/views/backend/videoHome.jsp"></put-attribute>
+	</definition>
+	
+	<!-- editVideo 後台行銷影片 新增、編輯 -->
+	<definition name="/backend/editVideo" extends="backend">
+		<put-attribute name="title" value="editVideo" />
+		<put-attribute name="body" value="/WEB-INF/views/backend/editVideo.jsp"></put-attribute>
+	</definition>
+	
+	<!-- logoWallHome 後台品牌牆 首頁 -->
+	<definition name="/backend/logoWallHome" extends="backend">
+		<put-attribute name="title" value="logoWallHome" />
+		<put-attribute name="body" value="/WEB-INF/views/backend/logoWallHome.jsp"></put-attribute>
+	</definition>
+	
+	<!-- editLogoWall 後台品牌牆 新增、編輯 -->
+	<definition name="/backend/editLogoWall" extends="backend">
+		<put-attribute name="title" value="editLogoWall" />
+		<put-attribute name="body" value="/WEB-INF/views/backend/editLogoWall.jsp"></put-attribute>
+	</definition>
+	
+	<!-- editLogoWallSort 後台品牌牆排序編輯 -->
+	<definition name="/backend/editLogoWallSort" extends="backend">
+		<put-attribute name="title" value="editLogoWallSort" />
+		<put-attribute name="body" value="/WEB-INF/views/backend/editLogoWallSort.jsp"></put-attribute>
+	</definition>
+	
+	<!-- successCaseHome 成功案例 首頁 -->
+	<definition name="/backend/successCaseHome" extends="backend">
+		<put-attribute name="title" value="successCaseHome" />
+		<put-attribute name="body" value="/WEB-INF/views/backend/successCaseHome.jsp"></put-attribute>
+	</definition>
+	
+	<!-- editsuccessCase 成功案例 首頁 -->
+	<definition name="/backend/editSuccessCase" extends="backend">
+		<put-attribute name="title" value="editSuccessCase" />
+		<put-attribute name="body" value="/WEB-INF/views/backend/editSuccessCase.jsp"></put-attribute>
+	</definition>
+	
+  	<!-- error -->
+  	<definition name="/error" template="/WEB-INF/views/exception/error.jsp">
+  	</definition>
+  
+  	<!-- 404 -->
+  	<definition name="/404" template="/WEB-INF/views/exception/404.jsp">
+  	</definition>
+	
+</tiles-definitions>

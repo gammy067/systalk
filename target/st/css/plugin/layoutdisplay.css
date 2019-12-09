@@ -1,0 +1,163 @@
+﻿@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(//fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(//fonts.googleapis.com/earlyaccess/cwtexming.css);
+@import url(//fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+/*.row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+    .row > [class*='col-'] {
+        display: flex;
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .row.col-vertical-middle > [class^='col-'] {
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+    }
+
+    .row.col-vertical-bottom > [class^='col-'] {
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+    }*/
+.editbody{
+	font-family:Verdana, Geneva, sans-serif, '微軟正黑體';
+}
+.editheader{
+	border-bottom:1px dotted #888888;
+	padding:20px 0;
+	width: 595.0pt;
+}
+.box-btn{
+	float:right;
+	padding-top: 14px;
+}
+.table {
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.table-no-border {
+    border: 0;
+}
+
+.table-no-border > thead > tr > th,
+.table-no-border > tbody > tr > th,
+.table-no-border > tfoot > tr > th,
+.table-no-border > thead > tr > td,
+.table-no-border > tbody > tr > td,
+.table-no-border > tfoot > tr > td {
+	border: 0;
+}
+.editbtn-btn{
+	float:right;
+	padding-top: 14px;
+}
+.editbtn{
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	border-radius: 4px 0 4px 0;
+	transition:all ease-in .5s;
+	margin-left:8px;
+}
+.editbtn a{
+	display: block;
+	color:#ffffff;
+	text-decoration:none;
+	padding: 6px 12px;
+}
+.editbtn-blue:hover, .btn-dblue:hover{
+	opacity:.65;
+}
+.editbtn-blue{
+	background-color: #036eb8;
+	border: 1px solid #324a80;
+	opacity:1;
+}
+.editbtn-dblue{
+	background-color: #405fa3;
+	border: 1px solid #324a80;
+	opacity:1;
+}
+.pagination-Container {
+    text-align: center;
+}
+
+[class^="col-"] a:hover {
+    text-decoration: none;
+}
+
+/* Bootstrap Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    /*編輯畫面無控制項保持欄位有一定的高度*/
+    .editor-drag-container .vertical-align-row {
+        min-height: 230px;
+    }
+
+    .vertical-align-row {
+        display: table;
+        table-layout: fixed;
+        height: 100%;
+        width: 100%;
+    }
+
+        .vertical-align-row > [class^="col-"],
+        .vertical-align-row > [class*="col-"] {
+            display: table-cell;
+            float: none;
+            height: 100%;
+        }
+
+    .col-vertical-middle {
+        vertical-align: middle;
+    }
+
+    .col-vertical-bottom {
+        vertical-align: bottom;
+    }
+}
+
+.editor-hot-icon:after {
+    content: "HOT";
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: top;
+    margin-left: 4px;
+    display: inline-block;
+}
+
+.editor-new-icon:after {
+    content: "NEW";
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: top;
+    margin-left: 4px;
+    display: inline-block;
+}
+
+.btn-link-default {
+    background-color: #ddd;
+}
+
+.editor-countdown {
+	float:left;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 4px;
+    display: inline-block;
+}

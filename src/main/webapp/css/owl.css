@@ -1,0 +1,133 @@
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.owl-nav button.owl-prev {
+  left: 0;
+}
+.owl-nav button.owl-next {
+  right: 0;
+}
+
+.owl-dots {
+  text-align: center;
+}
+.owl-dots button.owl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #fff;
+  margin: 0 3px;
+}
+.owl-dots button.owl-dot.active {
+  background-color: #8dbce3;
+}
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.owl-nav span {
+    font-size: 0px;    
+    position: relative;
+    top: -38px;
+}
+.owl-nav button:focus {
+    outline: none;
+}
+.owl-nav h2 {
+    margin-top: 50px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.owl-nav h2 span{
+  color: red;
+  font-size: 100%;
+  position: initial;
+}
+
+button.owl-next {
+  margin: 0px -8px 0px -30px;
+}
+button.owl-next span::before{
+  content: "";
+  position: absolute;
+  background-image: url(../images/product-owl-next@2x.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+}
+button.owl-prev {
+  margin: 0px 0px 0px -40px;
+}
+button.owl-prev span::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/product-owl-prev@2x.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+}
+
+/* less than 768px */
+@media (max-width: 768px) {
+
+	button.owl-next {
+    margin: 0px 78px 0px 0px;
+	}
+	button.owl-prev {
+    margin: 0px 0px 0px 50px;
+  }
+  .owl-carousel .owl-stage-outer {
+    overflow: inherit;
+}
+
+}
+/* less than 480px */
+@media (max-width: 480px) {
+
+	button.owl-next {
+    margin: 0px 44px 0px 0px;
+	}
+	button.owl-prev {
+    margin: 0px 0px 0px 15px;
+	}
+
+}
+
+/* less than 375px */
+@media (max-width: 375px) {
+
+	button.owl-next {
+		margin: 0px 39px 0px 0px;
+	}
+	button.owl-prev {
+		margin: 0px 0px 0px 10px;
+	}
+
+}
+/* less than 375px */
+@media (max-width: 320px) {
+
+	button.owl-next {
+		margin: 0px 32px 0px 0px;
+	}
+	button.owl-prev {
+		margin: 0px 0px 0px 4px;
+	}
+
+}

@@ -1,0 +1,465 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Microsoft JhengHei';
+    font-size: 14px;
+}
+
+.navbar {
+    border: 0;
+}
+
+.editor-header-nav {
+    background-color: #923535;
+    height: 90px;
+}
+
+.editor-header-nav a span {
+    color: white;
+}
+
+
+.editor-container {
+    height: 100%;
+}
+
+.editor-sidebar-nav {
+    /*position: fixed;*/
+    width: 250px;
+	/*padding-top:30px;*/
+    z-index: 10;
+}
+
+.editor-countdown-nav{
+	position: fixed;
+	margin: 0px auto;
+	right:0px;
+	bottom:0px;
+	z-index: 99;
+}
+
+.editor-sidebar-nav ul {
+	margin: 0 4px;
+}
+
+.editor-sidebar-nav input.form-control {
+	font-size: 10px;
+	width: 45px;
+	margin-right: 2px;
+}
+
+#compoment-container {
+    height: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#compoment-container > div.btn {
+	margin: 2px 0;
+	width: 49%;
+}
+
+.editor-sidebar-nav-switch{
+	position: fixed;
+	margin: 0px auto;
+	-webkit-writing-mode: vertical-lr;
+	right:0px;
+	top:150px;
+}
+
+.editor-content {
+    padding-right: 10px;
+}
+
+.edit-html-content{
+	background:#fff;
+	padding:10px;
+	margin:10px 0 0 0;
+}
+
+.edit-html-content h5{
+	color:#8bc541;
+	background:url(../images/dot-line.png) no-repeat;
+	background-position:50% 50%;
+	background-size:100% 2px;
+	padding:0 0 .5em 0;
+	font-size:26px;
+	text-align:center;
+	font-weight:bold;
+}
+.edit-html-container {
+    position: relative;
+    padding: 30px 20px 20px 20px;
+    border: 1px solid #d8b7b7;
+    border-radius: 4px;
+    display: block;
+}
+
+
+.edit-html-container:after {
+	background-color: #d8b7b7;
+	border: 1px solid #d8b7b7;
+	border-radius: 4px 0 4px 0;
+	color: #923535;
+	content: "編輯區";
+	font-size: 12px;
+	font-weight: bold;
+	left: -1px;
+	padding: 3px 7px;
+	position: absolute;
+	top: -1px;
+}
+
+.dragging-row {
+    min-height: 100px;
+    min-width: 300px;
+    border: 2px dashed #5b0505;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.editor-drag-container {
+    min-width: 300px;
+    border: 1px solid #BF6868;
+    background-color: #D8B7B7;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    margin: 10px 0;
+}
+
+    .editor-drag-container:after {
+        background-color: #BF6868;
+        border: 1px solid #BF6868;
+        border-radius: 4px 0 4px 0;
+        color: #D8B7B7;
+        content: "Row";
+        font-size: 12px;
+        font-weight: bold;
+        left: -1px;
+        padding: 3px 7px;
+        position: absolute;
+        top: -1px;
+    }
+
+    .editor-drag-container .editor-drag-tool {
+        text-align: right;
+        padding: 0 5px 10px 5px;
+    }
+
+        .editor-drag-container .editor-drag-tool button,
+        .editor-drag-container .editor-drag-tool div {
+            -moz-transition: all ease-in-out 0.5s;
+            -o-transition: all ease-in-out 0.5s;
+            -webkit-transition: all ease-in-out 0.5s;
+            transition: all ease-in-out 0.5s;
+            opacity: 0.5;
+        }
+
+    .editor-drag-container:hover .editor-drag-tool button,
+    .editor-drag-container:hover .editor-drag-tool div {
+        opacity: 1;
+    }
+
+    .editor-drag-container .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+        .editor-drag-container .row > div {
+            border: 8px solid #D8B7B7;
+            background-color: white;
+            -moz-border-radius: 14px;
+            -webkit-border-radius: 14px;
+            border-radius: 14px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            min-height: 230px;
+        }
+
+            .editor-drag-container .row > div:after {
+                background-color: #d8b7b7;
+                border: 1px solid #d8b7b7;
+                border-radius: 4px 0 4px 0;
+                color: #923535;
+                content: "Col";
+                font-size: 12px;
+                font-weight: bold;
+                left: -1px;
+                padding: 3px 7px;
+                position: absolute;
+                top: -1px;
+            }
+
+            .editor-drag-container .row > div[class^=col-] > .compoment-container {
+                margin: 5px 2px;
+                /*background-color: white;*/
+            }
+
+.compoment-container.ui-draggable-dragging,
+.compoment-container.ui-sortable-helper {
+    width: 350px;
+    border: 2px dashed #923535;
+    padding: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.ui-draggable-dragging .row > div {
+    border: 0 solid #D8B7B7;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    min-height: 80px;
+}
+
+    .ui-draggable-dragging .row > div:after {
+        padding: 0;
+    }
+
+.ui-draggable-dragging .editor-col-valign-tool,
+.ui-draggable-dragging .editor-drag-tool,
+.ui-draggable-dragging .compoment-tool {
+    display: none;
+}
+
+
+.ui-sortable-helper .compoment-tool {
+    display: none;
+}
+
+.sortable-placeholder {
+    border: 2px dotted #923535;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 4px 0;
+}
+
+.editor-col-valign-tool {
+    padding: 5px;
+    text-align: right;
+    background-color: #d8b7b7;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+    .editor-col-valign-tool button {
+        margin: 0 1px;
+    }
+
+.compoment-tool {
+    text-align: left;
+}
+
+    .compoment-tool button,
+    .compoment-tool div.btn {
+        -moz-transition: all ease-in-out 0.5s;
+        -o-transition: all ease-in-out 0.5s;
+        -webkit-transition: all ease-in-out 0.5s;
+        transition: all ease-in-out 0.5s;
+        opacity: 0.5;
+    }
+
+.editor-drag-container .row > div[class^=col-] > div:hover .compoment-tool button,
+.editor-drag-container .row > div[class^=col-] > div:hover .compoment-tool div.btn {
+    opacity: 1;
+}
+
+.compoment-view {
+    padding: 10px;
+    margin: 2px 0;
+}
+
+    .compoment-view table a,
+    .compoment-view table img {
+        cursor: move;
+    }
+
+.datepicker {
+    z-index: 9999 !important;
+}
+
+.compoment-tool-imgchange {
+    position: relative;
+    overflow: hidden;
+}
+
+    .compoment-tool-imgchange input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+
+div[class^=col-] div.compoment-container div.compoment-view table {
+    min-width: 300px;
+}
+
+    div[class^=col-] div.compoment-container div.compoment-view table > tbody td,
+    div[class^=col-] div.compoment-container div.compoment-view table > thead th {
+        height: 60px;
+        min-width: 150px;
+        /*vertical-align: middle;*/
+        -moz-transition: all linear .5s;
+        -o-transition: all linear .5s;
+        -webkit-transition: all linear .5s;
+        transition: all linear .5s;
+    }
+
+        div[class^=col-] div.compoment-container div.compoment-view table > tbody td:hover,
+        div[class^=col-] div.compoment-container div.compoment-view table > thead th:hover {
+            background-color: #D8B7B7;
+        }
+
+.layout-tool-sort,
+.compoment-tool-move {
+    cursor: move;
+}
+
+.spinner {
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+    .spinner > div {
+        background-color: white;
+        height: 100%;
+        width: 6px;
+        margin-left: 1px;
+        margin-right: 1px;
+        display: inline-block;
+        -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+        -moz-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+        -o-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+        animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    }
+
+    .spinner .rect2 {
+        -webkit-animation-delay: -1.1s;
+        -moz-animation-delay: -1.1s;
+        -o-animation-delay: -1.1s;
+        animation-delay: -1.1s;
+    }
+
+    .spinner .rect3 {
+        -webkit-animation-delay: -1.0s;
+        -moz-animation-delay: -1.0s;
+        -o-animation-delay: -1.0s;
+        animation-delay: -1.0s;
+    }
+
+    .spinner .rect4 {
+        -webkit-animation-delay: -0.9s;
+        -moz-animation-delay: -0.9s;
+        -o-animation-delay: -0.9s;
+        animation-delay: -0.9s;
+    }
+
+    .spinner .rect5 {
+        -webkit-animation-delay: -0.8s;
+        -moz-animation-delay: -0.8s;
+        -o-animation-delay: -0.8s;
+        animation-delay: -0.8s;
+    }
+
+@-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        -webkit-transform: scaleY(0.4);
+        -moz-transform: scaleY(0.4);
+        -ms-transform: scaleY(0.4);
+        -o-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+    }
+
+    20% {
+        -webkit-transform: scaleY(1.0);
+        -moz-transform: scaleY(1.0);
+        -ms-transform: scaleY(1.0);
+        -o-transform: scaleY(1.0);
+        transform: scaleY(1.0);
+    }
+}
+
+@-moz-keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        -webkit-transform: scaleY(0.4);
+        -moz-transform: scaleY(0.4);
+        -ms-transform: scaleY(0.4);
+        -o-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+    }
+
+    20% {
+        -webkit-transform: scaleY(1.0);
+        -moz-transform: scaleY(1.0);
+        -ms-transform: scaleY(1.0);
+        -o-transform: scaleY(1.0);
+        transform: scaleY(1.0);
+    }
+}
+
+@keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+        -webkit-transform: scaleY(0.4);
+        -moz-transform: scaleY(0.4);
+        -ms-transform: scaleY(0.4);
+        -o-transform: scaleY(0.4);
+        transform: scaleY(0.4);
+    }
+
+    20% {
+        -webkit-transform: scaleY(1.0);
+        -moz-transform: scaleY(1.0);
+        -ms-transform: scaleY(1.0);
+        -o-transform: scaleY(1.0);
+        transform: scaleY(1.0);
+    }
+}
+
+.fix    { 
+	position: fixed;
+}  
+
+.shift{
+	position: absolute;
+}
+
+.editclose {
+	float:right;
+	color: #fff;
+}
+
+.toolbox {
+	width: 250px;
+	z-index: 10;
+	right:25px;
+	top:160px;
+	
+	/* toolbar 疊物件, bar = box */
+	font-size: 14px;
+	background-color: #0070c0;
+	color: #fff;
+}
+
+.comment    { background-color: #fff; margin: 0px 0 0; }

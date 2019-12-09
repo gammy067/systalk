@@ -1,0 +1,1 @@
+document.writeln("Copyright © 昕力資訊股份有限公司 ThinkPower Information Corporation");

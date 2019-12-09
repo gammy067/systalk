@@ -1,0 +1,300 @@
+.article-box {
+	margin: 1rem;
+}
+
+.article-box>.container {
+	background-color: #fff;
+	font-size: 14px;
+	color: #333;
+	border: 1px solid #f0f0f0;
+}
+
+.article-box>.container>.article-row>.title {
+	color: #333;
+	font-size: 1.625rem;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.article-box>.container>.article-row>.title:after {
+	content: "";
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 3px;
+	margin: 5px auto 0 auto;
+	display: block;
+}
+
+.article-row {
+	padding: 50px 0px;
+}
+
+.tit-hr {
+	width: 50px;
+	height: 5px;
+	margin: 0px auto;
+	background-color: #60bf78;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.alert.alert-art {
+	padding: 15px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	outline: none;
+}
+
+.alert-secondary.alert-art {
+	color: #666;
+	background-color: #e6e6e6;
+	border-color: #e6e6e6;
+}
+
+
+
+/*******************choose***********************/
+/* Hide original appearance */
+.choose-file {
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	z-index: -1;
+	position: absolute;
+	width: 0.1px;
+  }
+
+/* Style both input field and label */
+.choose-file+.upload-file {
+	box-sizing: border-box;
+	color: #5A5541;
+	font-family: Sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 16px;
+	text-transform: initial;
+	cursor: pointer;
+}
+
+.btn.btn-up {
+    background-color: #fff;
+    border-color: #979797;
+    min-width: 72px;
+    font-size: 16px;
+	text-transform: initial;
+	color: #333;
+}
+.btn.btn-up button, html .btn.btn-up[type="button"], [type="reset"], [type="submit"] {
+-webkit-appearance: none; 
+}
+
+/*******************choose end***********************/
+
+
+.upload-art {
+    margin-top: 10px;
+}
+.article-editor{
+	background-color: #e6e6e6;
+	height: 587px;
+	margin: 20px 0px 30px;
+}
+
+
+.article-search {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.article-button-box{
+	margin: 15px 0px 30px;
+}
+
+.art-top{
+	padding-top: 10px;
+}
+.limit{
+	width: 25em;
+    overflow: hidden;
+	display: inline-block;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.article-table .table th,.article-table .table td {
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+/******* sign **********/
+.sign_bg{
+    background-image: url(../../images/new/bg-setting.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.sign_bg .article-box>.container {
+    background-color: inherit;
+    border: none;
+}
+
+.sign-box {
+	padding: 45px 75px;
+	margin: 0px auto;
+
+}
+form.form-signin {
+	width: 500px;
+	margin: 0px auto;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	-ms-border-radius:8px;
+	-o-border-radius:8px;
+}
+
+.sign-header{
+	background-image: url(../../images/new/rectangle.png);
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	color: #fff;
+	padding:30px 20px 20px;
+	border-radius: 8px 8px 0px 0px;
+	-webkit-border-radius: 8px 8px 0px 0px;
+	-moz-border-radius: 8px 8px 0px 0px;
+	-ms-border-radius: 8px 8px 0px 0px;
+	-o-border-radius: 8px 8px 0px 0px;
+}
+.sign-header .sign-photo {
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	background-color: #000;
+}
+
+.sign-header p{
+	font-size: 16px;
+}
+.sign-header h1{
+	font-size: 22px;
+}
+.sign-t{
+	font-size: 16px;
+}
+
+.sign-photo-box {
+    position: relative;
+}
+img.img-fluid.icon-photo {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.sign-photo img{
+	width: 100%;
+	height: auto;
+}
+
+.sign-region {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sign-click{
+	position: relative;
+}
+
+
+.article-button button {
+	min-width: 95px;
+	margin: 0px 10px;
+}
+.art-btn-green{
+	color: #fff;
+	background-color: #60bf78;
+	border-radius: 14px;
+	display: inline-block;
+	font-size: 15px;
+	padding: 3px 12px;
+}
+
+.art-button button{
+	min-width: 167px;
+	margin: 0px auto;
+}
+
+.modalFeatured img{
+width: 18px;
+cursor: pointer;
+}
+.modalFeatured .btn.btn-up{
+	border: 0px;
+	min-width: 18px;
+	padding: 0px;
+
+}
+.modalFeatured label{
+	margin-bottom: 5px;
+}
+.modal-f.art-button {
+    margin: 10px 0px;
+    text-align: center;
+}
+div#DataTables_Table_0_wrapper > .row {
+	margin: 0px;
+}
+
+
+
+@media (max-width: 1200px) {
+	.article-table table.table {
+		display: block;
+	  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+	.upload {
+		margin: 10px 0px;
+	}
+	form.form-signin {
+		width: 100%;
+	}
+	.sign-box {
+		padding: 30px;
+	}
+	
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	.article-button button {
+		margin: 10px;
+	}
+}
+/* less than 480px */
+@media (max-width: 480px) {
+
+}
